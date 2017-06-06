@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/serpbook-php-client",
     "description": "A SerpBook Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-serpbook", "serpbook", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "serpbook", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
