@@ -33,7 +33,7 @@ class Client
      */
     public function __construct(string $key, string $email)
     {
-        $this->key   = $key;
+        $this->key = $key;
         $this->email = $email;
     }
 
