@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of SerpBook PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\SerpBook;
+namespace Plients\SerpBook;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -44,13 +44,13 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\SerpBook\API\AbstractAPI
+     * @return \Plients\SerpBook\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
         $client = Http::withBaseUri("https://serpbook.com/serp/api/?auth={$this->key}&e={$this->email}");
 
-        $class = "BrianFaust\\SerpBook\\API\\{$name}";
+        $class = "Plients\\SerpBook\\API\\{$name}";
 
         return new $class($client);
     }
